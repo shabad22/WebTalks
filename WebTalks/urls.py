@@ -15,9 +15,9 @@ urlpatterns = [
     path('profile/', users_views.profile, name='profile'),
     path('login/', auth_views.LoginView.as_view(template_name='users/login.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(template_name='users/logout.html'), name='logout'),
-    path('reset-pass/', auth_views.PasswordResetView.as_view(template_name='users/reset_pass.html'), name='reset-pass'),
-    path('reset-pass/email-sent', auth_views.PasswordResetDoneView.as_view(template_name='users/reset_pass_done.html'), name='reset-pass-done'),
-    path('password-reset-confirm/<uidb64>/<token>/', auth_views.PasswordResetConfirmView.as_view(template_name='users/password_reset_confirm.html'), name='reset-pass-confirm'),
+    # path('reset-pass/', auth_views.PasswordResetView.as_view(template_name='users/reset_pass.html'), name='reset-pass'),
+    # path('reset-pass/email-sent', auth_views.PasswordResetDoneView.as_view(template_name='users/reset_pass_done.html'), name='reset-pass-done'),
+    # path('password-reset-confirm/<uidb64>/<token>/', auth_views.PasswordResetConfirmView.as_view(template_name='users/password_reset_confirm.html'), name='reset-pass-confirm'),
     path('', include('blog.urls')),
 ]
 
