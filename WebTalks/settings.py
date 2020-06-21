@@ -25,7 +25,7 @@ SECRET_KEY = 'r0%%y8(s(np8q_b)cg%9(kwt6g2cez4@zi@@#&y53)%==-$=0-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ['WebTalks.herokuapp.com']
+ALLOWED_HOSTS = ['webtalks.herokuapp.com']
     
 
 # Application definition
